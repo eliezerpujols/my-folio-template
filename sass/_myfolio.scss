@@ -1,0 +1,103 @@
+@import "variables";
+@import "mixins";
+
+// Global Components
+html,
+body {
+   height: 100%;
+   width: 100%;
+}
+
+body {
+   color: $text-color;
+   font: 12px/1.8 "open sans", sans-serif;
+}
+
+a {
+   color: $theme-primary;
+   @include transition-all;
+   &:focus,
+   &:hover {
+      color: lighten($theme-primary, 5%);
+   }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-weight: 700;
+   line-height: inherit;
+   margin: 16px 0;
+}
+
+p {
+   margin-bottom: 22px;
+}
+
+.lead {
+   font-size: 14px;
+   font-weight: inherit;
+   line-height: 2.4;
+   margin-bottom: 22px;
+   @media #{$break-sm-min} {
+      font-size: 16px;
+   }
+}
+
+strong {
+   font-size: 24px;
+   font-weight: 700;
+}
+
+// Bootstrap Overrides
+.text-primary  {
+   color: $theme-primary;
+}
+
+.no-gutter > [class*="col-"] {
+   padding-right: 0;
+   padding-left: 0;
+}
+
+// Buttons Styles
+.btn-default {
+   @include btn-variant($theme-accent, $theme-dark);
+}
+
+.btn-primary {
+   @include btn-variant($theme-primary, white);
+}
+
+.btn {
+   border: none;
+   border-radius: 0;
+   font-size: 14px;
+   font-weight: 700;
+   min-width: 180px;
+   text-transform: uppercase;
+   &:focus {
+      @include box-shadow(none);
+   }
+}
+
+.btn-xl {
+   height: auto;
+   padding: 11px 24px;
+}
+
+// Extras
+// -- Highlight Color Customization
+::-moz-selection {
+   background-color: $theme-primary;
+   color: white;
+   text-shadow: none;
+}
+
+::selection {
+   background-color: $theme-primary;
+   color: white;
+   text-shadow: none;
+}
