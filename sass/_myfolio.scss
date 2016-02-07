@@ -52,9 +52,75 @@ strong {
    font-weight: 700;
 }
 
+// Navigation
+.navbar-default {
+   background-color: $theme-primary;
+   border-style: none;
+   .navbar-header {
+      .navbar-brand {
+         color: white;
+         font-weight: 700;
+         text-transform: uppercase;
+      }
+      .navbar-toggle {
+         border-style: none;
+         .icon-bar {
+            background-color: white;
+            @include transition-all;
+         }
+         &:focus,
+         &:hover {
+            background-color: transparent;
+            .icon-bar {
+               background-color: $theme-accent;
+            }
+         }
+      }
+   }
+   .navbar-collapse {
+      border-style: none;
+   }
+   .nav {
+      > li {
+         > a {
+            color: white;
+            font-weight: 700;
+            text-transform: uppercase;
+            &:focus,
+            &:hover {
+               color: $theme-accent;
+            }
+         }
+         &.active {
+            > a {
+               &,
+               &:focus,
+               &:hover {
+                  background-color: transparent;
+                  color: $theme-accent;
+               }
+            }
+         }
+      }
+   }
+   @media (min-width: 768px) {
+      padding: 6px 0;
+      .navbar-header {
+         .navbar-brand {
+            font-size: 22px;
+            padding: 14px 15px 16px;
+         }
+      }
+   }
+}
+
 // Bootstrap Overrides
 .text-primary  {
    color: $theme-primary;
+}
+
+.text-accent {
+   color: $theme-accent;
 }
 
 .no-gutter > [class*="col-"] {
