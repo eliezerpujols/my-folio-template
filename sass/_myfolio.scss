@@ -56,6 +56,7 @@ strong {
 .navbar-default {
    background-color: $theme-primary;
    border-style: none;
+   @include transition-all;
    .navbar-header {
       .navbar-brand {
          color: white;
@@ -103,13 +104,24 @@ strong {
          }
       }
    }
-   @media (min-width: 768px) {
-      padding: 6px 0;
+   @media (min-width: 768px) and (min-height: 590px) {
+      background-color: transparent;
+      padding: 18px 0;
       .navbar-header {
          .navbar-brand {
             font-size: 22px;
             padding: 14px 15px 16px;
          }
+      }
+      &.affix {
+         background-color: $theme-primary;
+         padding: 0;
+         .navbar-header {
+            .navbar-brand {
+               font-size: 18px;
+               padding: 15px 15px;
+            }
+         }       
       }
    }
 }
