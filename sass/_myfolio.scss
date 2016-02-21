@@ -126,6 +126,43 @@ strong {
    }
 }
 
+// Intro
+header {
+   background-image: url("../img/header.jpg");
+   background-position: center center;   
+   background-repeat: no-repeat;
+   background-size: cover;
+   .intro-inner {
+      background-color: rgba($theme-dark, .8);
+      padding: 120px 0;
+   }
+   .intro-heading,
+   .intro-lead-in {
+      color: white;
+      letter-spacing: 8px;
+      text-transform: uppercase;      
+   }
+   .intro-heading {
+      font-size: 44px;
+      font-weight: 700;   
+      margin-bottom: 52px;
+   }
+   .intro-lead-in {
+      font-size: 28px;
+   }
+   @media (min-width: 768px) and (min-height: 590px) {
+      .intro-inner {
+         padding: 220px 0 170px;
+      }
+      .intro-heading {
+         font-size: 68px;
+      }
+      .intro-lead-in {
+         font-size: 38px;
+      }
+   }
+}
+
 // Bootstrap Overrides
 .text-primary  {
    color: $theme-primary;
