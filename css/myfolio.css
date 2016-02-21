@@ -112,6 +112,42 @@ strong {
   }
 }
 
+header {
+  background-image: url("../img/header.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header .intro-inner {
+  background-color: rgba(11, 11, 11, 0.8);
+  padding: 120px 0;
+}
+header .intro-heading,
+header .intro-lead-in {
+  color: white;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+header .intro-heading {
+  font-size: 44px;
+  font-weight: 700;
+  margin-bottom: 52px;
+}
+header .intro-lead-in {
+  font-size: 28px;
+}
+@media (min-width: 768px) and (min-height: 590px) {
+  header .intro-inner {
+    padding: 220px 0 170px;
+  }
+  header .intro-heading {
+    font-size: 68px;
+  }
+  header .intro-lead-in {
+    font-size: 38px;
+  }
+}
+
 .text-primary {
   color: #01928d;
 }
