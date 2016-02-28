@@ -20,6 +20,16 @@ a:focus, a:hover {
   color: #01aba5;
 }
 
+hr {
+  border-style: none;
+  margin: 8px 0 46px;
+}
+hr::before {
+  display: block;
+  font-size: 16px;
+  content: "~~~~~~~~~ :: ~~~~~~~~~";
+}
+
 h1,
 h2,
 h3,
@@ -147,6 +157,61 @@ header .intro-lead-in {
   header .intro-lead-in {
     font-size: 38px;
   }
+}
+
+.section-heading {
+  padding: 82px 0 40px;
+}
+.section-heading .section-title {
+  color: #01928d;
+  font-size: 52px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.section-heading p {
+  margin-bottom: 0;
+}
+
+.section-content {
+  padding: 40px 0 82px;
+}
+
+.features-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.features-list li {
+  float: left;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .features-list li {
+    border-right: 1px solid #dedfe0;
+    width: 50%;
+  }
+  .features-list li:nth-child(2n) {
+    border-style: none;
+  }
+}
+@media (min-width: 990px) {
+  .features-list li {
+    width: 25%;
+  }
+  .features-list li:nth-child(2n) {
+    border-right: 1px solid #dedfe0;
+  }
+  .features-list li:last-of-type {
+    border-style: none;
+  }
+}
+
+.feature-box {
+  padding: 40px;
+}
+.feature-box p {
+  margin-bottom: 0;
 }
 
 .text-primary {
