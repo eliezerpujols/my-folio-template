@@ -23,6 +23,16 @@ a {
    }
 }
 
+hr {
+   border-style: none;
+   margin: 8px 0 46px;
+   &::before {
+      display: block;
+      font-size: 16px;
+      content: "~~~~~~~~~ :: ~~~~~~~~~";
+   }
+}
+
 h1,
 h2,
 h3,
@@ -161,6 +171,59 @@ header {
       .intro-lead-in {
          font-size: 38px;
       }
+   }
+}
+
+// Sections
+.section-heading {
+   padding: 82px 0 40px;
+   .section-title {
+      color: $theme-primary;
+      font-size: 52px;
+      font-weight: 700;
+      text-transform: uppercase;
+   }
+   p {
+      margin-bottom: 0;
+   }
+}
+
+.section-content {
+   padding: 40px 0 82px;
+}
+
+// Features List
+.features-list {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   li {
+      float: left;
+      width: 100%;
+      @media (min-width: 768px) {
+         border-right: 1px solid lighten($text-color, 38%);
+         width: 50%;
+         &:nth-child(2n) {
+            border-style: none; 
+         }
+      }
+      @media (min-width: 990px) {
+         width: 25%;
+         &:nth-child(2n) {
+            border-right: 1px solid lighten($text-color, 38%);
+         }
+         &:last-of-type {
+            border-style: none; 
+         }
+      }
+   }
+}
+
+.feature-box {
+   padding: 40px;
+   p {
+      margin-bottom: 0;
    }
 }
 
