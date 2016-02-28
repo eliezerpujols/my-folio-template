@@ -12,7 +12,7 @@ Have a bug or an issue with this theme? [Open a new issue](https://github.com/el
 
 ## Creators
 
-My Folio was designed by [Ashok Suthar](https://dribbble.com/ashoksuthar), and developed by **Eliezer Pujols**, you can follow him:
+My Folio was created by **Eliezer Pujols**, you can follow him:
 
 * https://twitter.com/eliezerpujols
 * https://github.com/eliezerpujols

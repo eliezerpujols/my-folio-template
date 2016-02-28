@@ -1,7 +1,12 @@
 @import "variables";
 @import "mixins";
 
-// Global Components
+/* ------------------------------
+
+   Global Components
+ 
+--------------------------------- */
+
 html,
 body {
    height: 100%;
@@ -53,7 +58,7 @@ p {
    font-weight: inherit;
    line-height: 2.4;
    margin-bottom: 22px;
-   @media #{$break-sm-min} {
+   @media (min-width: 768px) {
       font-size: 16px;
    }
 }
@@ -63,7 +68,12 @@ strong {
    font-weight: 700;
 }
 
-// Navigation
+/* ------------------------------
+
+   Navigation 
+ 
+--------------------------------- */
+
 .navbar-default {
    background-color: $theme-primary;
    border-style: none;
@@ -137,7 +147,12 @@ strong {
    }
 }
 
-// Intro
+/* ------------------------------
+
+   Intro 
+ 
+--------------------------------- */
+
 header {
    background-image: url("../img/header.jpg");
    background-position: center center;   
@@ -174,7 +189,12 @@ header {
    }
 }
 
-// Sections
+/* ------------------------------
+
+   Sections Styles
+ 
+--------------------------------- */
+
 .section-heading {
    padding: 82px 0 40px;
    .section-title {
@@ -192,7 +212,12 @@ header {
    padding: 40px 0 82px;
 }
 
-// Features List
+/* ------------------------------
+
+   Features 
+ 
+--------------------------------- */
+
 .features-list {
    list-style: none;
    margin: 0;
@@ -227,7 +252,12 @@ header {
    }
 }
 
-// Bootstrap Overrides
+/* ------------------------------
+
+   Bootstrap Overrides
+ 
+--------------------------------- */
+
 .text-primary  {
    color: $theme-primary;
 }
@@ -241,7 +271,12 @@ header {
    padding-left: 0;
 }
 
-// Buttons Styles
+/* ------------------------------
+
+   Buttons Styles
+ 
+--------------------------------- */
+
 .btn-default {
    @include btn-variant($theme-accent, $theme-dark);
 }
@@ -267,7 +302,12 @@ header {
    padding: 11px 24px;
 }
 
-// Extras
+/* ------------------------------
+
+   Extras
+ 
+--------------------------------- */
+
 // -- Highlight Color Customization
 ::-moz-selection {
    background-color: $theme-primary;

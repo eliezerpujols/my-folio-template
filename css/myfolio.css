@@ -1,3 +1,8 @@
+/* ------------------------------
+
+   Global Components
+ 
+--------------------------------- */
 html,
 body {
   height: 100%;
@@ -62,6 +67,11 @@ strong {
   font-weight: 700;
 }
 
+/* ------------------------------
+
+   Navigation 
+ 
+--------------------------------- */
 .navbar-default {
   background-color: #01928d;
   border-style: none;
@@ -123,6 +133,11 @@ strong {
   }
 }
 
+/* ------------------------------
+
+   Intro 
+ 
+--------------------------------- */
 header {
   background-image: url("../img/header.jpg");
   background-position: center center;
@@ -159,6 +174,11 @@ header .intro-lead-in {
   }
 }
 
+/* ------------------------------
+
+   Sections Styles
+ 
+--------------------------------- */
 .section-heading {
   padding: 82px 0 40px;
 }
@@ -176,6 +196,11 @@ header .intro-lead-in {
   padding: 40px 0 82px;
 }
 
+/* ------------------------------
+
+   Features 
+ 
+--------------------------------- */
 .features-list {
   list-style: none;
   margin: 0;
@@ -214,6 +239,11 @@ header .intro-lead-in {
   margin-bottom: 0;
 }
 
+/* ------------------------------
+
+   Bootstrap Overrides
+ 
+--------------------------------- */
 .text-primary {
   color: #01928d;
 }
@@ -227,6 +257,11 @@ header .intro-lead-in {
   padding-left: 0;
 }
 
+/* ------------------------------
+
+   Buttons Styles
+ 
+--------------------------------- */
 .btn-default {
   border: none;
   background-color: #dad41d;
@@ -274,6 +309,11 @@ header .intro-lead-in {
   padding: 11px 24px;
 }
 
+/* ------------------------------
+
+   Extras
+ 
+--------------------------------- */
 ::-moz-selection {
   background-color: #01928d;
   color: white;
