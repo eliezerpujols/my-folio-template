@@ -72,10 +72,6 @@ strong {
    padding: 0;
 }
 
-.bg-gray {
-   background-color: $theme-bg;
-}
-
 /* ------------------------------
 
    Navigation 
@@ -273,6 +269,19 @@ header {
 --------------------------------- */
 
 #services {
+   background-color: $theme-bg;
+   @media (max-width: 767px) {
+      text-align: center;
+   }
+   // -- Section heading and content
+   @media (min-width: 768px) {
+      .section-heading {
+         padding: 0 0 40px;
+      }
+      .section-content {
+         padding: 0;
+      }
+   }
    // -- Two Column
    .two-col {
       .content-col {
@@ -332,19 +341,6 @@ header {
          } 
       }
    }
-   
-   // -- Section heading and content
-   @media (min-width: 768px) {
-      .section-heading {
-         padding: 0 0 40px;
-      }
-      .section-content {
-         padding: 0;
-      }
-   }
-   @media (max-width: 767px) {
-      text-align: center;
-   }
 }
 
 // -- Services List
@@ -360,7 +356,7 @@ header {
       li {
          float: left;
          width: calc(50% - 14px);
-         &:nth-child(1) {
+         &:nth-child(2n+1) {
             margin-right: 28px;
          }
       }
