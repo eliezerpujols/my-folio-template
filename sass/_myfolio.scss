@@ -371,6 +371,40 @@ header {
 
 /* ------------------------------
 
+   Porfolio Section
+ 
+--------------------------------- */
+
+.porfolio-box {
+   overflow: hidden;
+   img {
+      margin: 0;
+      width: 100%; 
+   }
+   .porfolio-box-content {
+      padding: 24px 15px;
+   }
+   @media (min-width: 768px) {
+      position: relative;   
+      .porfolio-box-content {
+         background-color: rgba($theme-primary, .8);
+         color: white;
+         height: 100%;
+         left: 0;
+         opacity: 0;         
+         position: absolute;
+         top: 0;
+         @include transition-all;         
+         width: 100%;
+         &:hover {
+            opacity: 1;
+         }
+      }
+   }
+}
+
+/* ------------------------------
+
    Bootstrap Overrides
  
 --------------------------------- */
