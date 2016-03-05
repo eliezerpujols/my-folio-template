@@ -273,6 +273,7 @@ header {
    @media (max-width: 767px) {
       text-align: center;
    }
+   
    // -- Section heading and content
    @media (min-width: 768px) {
       .section-heading {
@@ -282,6 +283,7 @@ header {
          padding: 0;
       }
    }
+   
    // -- Two Column
    .two-col {
       .content-col {
@@ -410,8 +412,8 @@ header {
 --------------------------------- */
 
 #contact {
-   .content {
-      background-color: lighten($theme-dark, 5%);
+   .inner {
+      background-color: lighten($theme-dark, 3%);
    }
 }
 
@@ -469,7 +471,10 @@ textarea {
       border-radius: 0;
       @include box-shadow(none);
       color: lighten($theme-dark, 50%);
+      font-size: 12px;
       height: auto;
+      letter-spacing: 1px;
+      line-height: 1.8;      
       padding: 0 28px 18px;
       text-align: center;
       text-transform: uppercase;      
