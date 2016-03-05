@@ -405,6 +405,18 @@ header {
 
 /* ------------------------------
 
+   Contact Section
+ 
+--------------------------------- */
+
+#contact {
+   .content {
+      background-color: lighten($theme-dark, 5%);
+   }
+}
+
+/* ------------------------------
+
    Bootstrap Overrides
  
 --------------------------------- */
@@ -420,6 +432,43 @@ header {
 .no-gutter > [class*="col-"] {
    padding-right: 0;
    padding-left: 0;
+}
+
+/* ------------------------------
+
+   Form Styles
+ 
+--------------------------------- */
+
+.form-group {
+   margin-bottom: 54px;
+}
+
+input,
+select,
+textarea {
+   &.form-control {
+      background-color: transparent;
+      border-style: none;
+      border-bottom: 2px solid lighten($theme-dark, 50%);
+      border-radius: 0;
+      @include box-shadow(none);
+      color: lighten($theme-dark, 50%);
+      height: auto;
+      padding: 0 28px 18px;
+      text-align: center;
+      text-transform: uppercase;      
+      &:focus {
+         border-color: $theme-primary;
+         @include box-shadow(none);
+      }
+   }
+}
+
+textarea {
+   &.form-control {
+      resize: none;
+   }
 }
 
 /* ------------------------------

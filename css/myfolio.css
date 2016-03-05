@@ -389,6 +389,15 @@ header .intro-lead-in {
 
 /* ------------------------------
 
+   Contact Section
+ 
+--------------------------------- */
+#contact .content {
+  background-color: #181818;
+}
+
+/* ------------------------------
+
    Bootstrap Overrides
  
 --------------------------------- */
@@ -403,6 +412,44 @@ header .intro-lead-in {
 .no-gutter > [class*="col-"] {
   padding-right: 0;
   padding-left: 0;
+}
+
+/* ------------------------------
+
+   Form Styles
+ 
+--------------------------------- */
+.form-group {
+  margin-bottom: 54px;
+}
+
+input.form-control,
+select.form-control,
+textarea.form-control {
+  background-color: transparent;
+  border-style: none;
+  border-bottom: 2px solid #8b8b8b;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  color: #8b8b8b;
+  height: auto;
+  padding: 0 28px 18px;
+  text-align: center;
+  text-transform: uppercase;
+}
+input.form-control:focus,
+select.form-control:focus,
+textarea.form-control:focus {
+  border-color: #01928d;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+textarea.form-control {
+  resize: none;
 }
 
 /* ------------------------------
