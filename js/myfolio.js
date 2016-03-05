@@ -1,5 +1,10 @@
 (function($) {
    "use strict"; // Start of use strict
+   
+   // Pre-loader Setting
+   $(window).load(function() {
+      $("#pre-loader").fadeOut("slow");
+   });
 
    // jQuery for page scrolling feature - requires jQuery Easing plugin
    $('a.page-scroll').bind('click', function(event) {
