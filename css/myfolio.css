@@ -398,6 +398,20 @@ header .intro-lead-in {
 
 /* ------------------------------
 
+   Footer
+ 
+--------------------------------- */
+footer {
+  background-color: #0b0b0b;
+  padding: 18px 0;
+}
+footer .copy {
+  color: #8b8b8b;
+  text-transform: uppercase;
+}
+
+/* ------------------------------
+
    Bootstrap Overrides
  
 --------------------------------- */

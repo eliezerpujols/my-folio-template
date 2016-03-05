@@ -417,6 +417,21 @@ header {
 
 /* ------------------------------
 
+   Footer
+ 
+--------------------------------- */
+
+footer {
+   background-color: $theme-dark;
+   padding: 18px 0;
+   .copy {
+      color: lighten($theme-dark, 50%);
+      text-transform: uppercase;
+   }
+}
+
+/* ------------------------------
+
    Bootstrap Overrides
  
 --------------------------------- */
