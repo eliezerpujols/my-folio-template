@@ -29,13 +29,12 @@ a {
 }
 
 hr {
+   background-image: url("../img/line-style.png");
+   background-position: center center;   
+   background-repeat: no-repeat;
    border-style: none;
-   margin: 12px 0 46px;
-   &::before {
-      display: block;
-      font-size: 16px;
-      content: "~~~~~~~~~ :: ~~~~~~~~~";
-   }
+   margin: 0;
+   padding: 12px 0 46px;
 }
 
 h1,
@@ -221,10 +220,13 @@ header {
    padding: 82px 0 40px;
    .section-title {
       color: $theme-primary;
-      font-size: 48px;
+      font-size: 38px;
       font-weight: 700;
       line-height: 1.1;
       text-transform: uppercase;
+      @media (min-width: 768px) {
+         font-size: 48px;
+      }
    }
    p {
       margin-bottom: 0;
@@ -299,6 +301,9 @@ header {
       }
       .section-content {
          padding: 0;
+      }
+      hr {
+         background-position: center left;
       }
    }
    
