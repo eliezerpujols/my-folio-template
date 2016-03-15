@@ -26,13 +26,12 @@ a:focus, a:hover {
 }
 
 hr {
+  background-image: url("../img/line-style.png");
+  background-position: center center;
+  background-repeat: no-repeat;
   border-style: none;
-  margin: 12px 0 46px;
-}
-hr::before {
-  display: block;
-  font-size: 16px;
-  content: "~~~~~~~~~ :: ~~~~~~~~~";
+  margin: 0;
+  padding: 12px 0 46px;
 }
 
 h1,
@@ -205,10 +204,15 @@ header .intro-lead-in {
 }
 .section-heading .section-title {
   color: #01928d;
-  font-size: 48px;
+  font-size: 38px;
   font-weight: 700;
   line-height: 1.1;
   text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .section-heading .section-title {
+    font-size: 48px;
+  }
 }
 .section-heading p {
   margin-bottom: 0;
@@ -284,6 +288,9 @@ header .intro-lead-in {
   }
   #services .section-content {
     padding: 0;
+  }
+  #services hr {
+    background-position: center left;
   }
 }
 #services .two-col .content-col {
