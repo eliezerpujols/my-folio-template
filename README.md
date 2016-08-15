@@ -8,11 +8,11 @@ To use this theme you can fork this repository on GitHub.
 
 ## Bugs and Issues
 
-Have a bug or an issue with this theme? [Open a new issue](https://github.com/eliezerpujols/my-folio-template/issues) here on GitHub.
+Have a bug or an issue with this theme? [Open a new issue](https://github.com/wideckop/my-folio-template/issues) here on GitHub.
 
 ## Creators
 
 My Folio was created by **Eliezer Pujols**, you can follow him:
 
-* https://twitter.com/eliezerpujols
-* https://github.com/eliezerpujols
+* https://twitter.com/wideckop
+* https://github.com/wideckop
